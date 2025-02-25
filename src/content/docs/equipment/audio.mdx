@@ -1,0 +1,115 @@
+---
+title: Audio
+description: Aduio components
+sidebar:
+  order: 2
+---
+
+import { Aside, Tabs, TabItem, Card } from "@astrojs/starlight/components";
+ 
+This section will go over all the **audio components.** You'll learn what they do, how to connect them and how to troubleshoot them.
+
+<Aside type="tip" title="Don't be afraid!">
+  Audio components may look confusing or complicated but they're easy to
+  understand. Keep an open mind and it will make sense at the end.
+</Aside>
+
+## Microphone
+
+The microphone you'll be using is the Shure MX 393/O. This captures audio around it and it's great for a meeting room. This should be placed on high flat surface like a desk.
+
+### Shure MX 393/O
+
+![image of a shure MX 393/o microphone](https://cdn11.bigcommerce.com/s-mmffu4sg6a/images/stencil/1280x1280/products/22101/45272/0183e9c5c63e497ec87aabad1f5aafb1__99150.1651669605.jpg?c=1)
+
+As you can see this microphone has two parts, the microphone itself and an XLR adapter that we will talk about latter on.
+
+<Aside type="caution">
+  The cable is permanently attach to the microphone and it's fragile. Handle
+  with care and don't put unnecessary stress at the ends.
+</Aside>
+
+### Functionality
+
+This microphone has an **omnidirectional polar pattern,** meaning it can capture audio around them, the audio decreases in quality the further you are from them.
+
+Here's an illustration on different polar pattern used for microphones
+
+![Polar patterns illustration](https://cdn.prod.website-files.com/655e0fa544c67c1ee5ce01c7/655e0fa544c67c1ee5ce11aa_an-artists-guide-to-microphone-polar-patterns-chart.jpg)
+
+As you can see the **Omni-directional** pattern covers an area **around** the microphone.
+
+<Aside>
+  Remember that the microphones is crucial for a good capture of the room's
+  audio. You only have **12 ft** of cable.
+</Aside>
+
+### Position
+
+A great position for this microphone is a **table.** Position the microphones were the most **conversational interaction** happens making sure the two microphones are **at least 6ft apart** for optimal audio capture.
+
+<Aside type="danger">
+  Make sure to position the microphones were the least **physical interaction**
+  is going to happen. These are sensitive microphones and noises like **closing
+  a paper tray or unboxings will be loud** if it happens near them.
+</Aside>
+
+## Audio Interface
+
+The interface you will be using is the Focusrite Scarlett 2i2 (4th gen). This component will transform the analog signature of the microphones into a digital input for the computer.
+
+### Focusrite Scarlett 2i2 Gen 4 Audio Interface
+
+![A picture of the front and back of the Scarlett 2i2 gen 4 audio interface](https://i.ebayimg.com/images/g/ejsAAOSwBnVnFb9F/s-l1600.webp)
+
+This component looks complex but after knowing what all the parts mean, it will be self-explanatory.
+
+### Functionality
+
+We will split the functionality into two parts
+
+- Front of the Interface
+- Back of the Interface
+
+### Front of the Interface
+
+The front of this audio interface has the most population of buttons and knobs, but we'll walk through what they mean and how they work.
+
+![image of the front interface of the audio interface](./../../../assets/scarlett2i2-front.jpg)
+
+Let's focus in the left side first.
+
+### Knobs
+
+You'll see two knobs with an RGB (Red Green Blue) light ring around them. These control the gain of the microphones.
+
+<Card title="Turning the knobs">
+  <Tabs>
+    <TabItem label="Clockwise">
+      This will **increase the gain** of the microphones. The microphones will
+      become more sensitive to sound.
+      <Aside>
+        If you want to record subjects that are far away from the microphones,
+        you should increase the gain.
+      </Aside>
+      <Aside type="danger" title="Keep in mind">
+        The more sensitive the microphones are, the more background noise it
+        will pick up. Noise that happens near the microphones will be louder.
+      </Aside>
+    </TabItem>
+    <TabItem label="Counterclockwise">
+      This will **decrease the gain** of the microphone. The microphones will
+      become less sensitive to sound.
+      <Aside>
+        If you have a lot of background noise, try reducing the gain on the
+        microphone.
+      </Aside>
+      <Aside type="caution" title="Keep in Mind">
+        The lower the gain, the less backgorund noise, but the closer you
+        subjects need to be to the microphones.
+      </Aside>
+    </TabItem>
+  </Tabs>
+</Card>
+
+The RGB ring will change colors from green white to red. These colors have meaning and need to be managed constantly if your
