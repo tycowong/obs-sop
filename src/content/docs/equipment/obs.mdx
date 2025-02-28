@@ -239,3 +239,102 @@ Here's how to get both
 </Aside>
 
 ## Broadcasting and Recording
+
+We will focus in the Control section that you can fin in the bottom right of the OBS window.
+
+<div class="center">
+  ![screenshot of Control section in OBS](./../../../assets/control-button.png)
+</div>
+
+We only need to focus in two buttons
+
+- Strat Recording
+- Start Virtual Camera
+
+### Start Recording Button
+
+This button will start a recording of all the sources in the selected scene.
+
+<Aside type="caution">
+  You can switch scenes while recording, just make sure the audio sources match
+  between scenes. If you have a scene with microphone input and then switch to
+  another scene without that microphone, you will loose sound in the recording.
+</Aside>
+
+After clicking this button, the button's text will changer to **Stop Recording** and a pause button will appear in the right.
+
+<div class="center">
+  ![screenshot of the start button press in
+  obs](./../../../assets/recording-press.png)
+</div>
+
+These are self describing, but here's the actions of these buttons just in case.
+
+<Card title="Stop and Pause">
+  <Tabs>
+    <TabItem label="Stop Recording Button">
+      This will pause the recording and will finish the video encoding.
+    </TabItem>
+    <TabItem label="Pause Button">
+      This will pause the recording until you press the pause button again.
+    </TabItem>
+  </Tabs>
+</Card>
+
+By default your recording are going into the **Videos** folder in your computer.
+
+<Aside type="caution">
+  If this is not the case click **File > Settings > Output** and you'll see
+  under **Recording > Recording Path** the path were OBS is recording
+</Aside>
+
+### Video Format
+
+There's different outputs the video encoder will let you choose from. By default the format of the video will be **mkv.**
+
+Here's some benefits of using **mkv** vs **mp4**
+
+|                  | MKV                                                                 | MP4                                                  |
+| ---------------- | ------------------------------------------------------------------- | ---------------------------------------------------- |
+| File size        | Larger files due to lossless compression                            | Smaller files due to efficient compression           |
+| Compatibility    | Supports many codecs, but some devices may not support MKV natively | More widely compatible with most devices             |
+| Video quality    | Higher quality due to lossless compression                          | Lower quality than MKV due to compression            |
+| Features         | Supports multiple audio and subtitle tracks, chapters, and tags     | Supports fewer tracks and basic metadata             |
+| Error resilience | Can recover from file corruption and play partial content           | Often makes the entire video unplayable if corrupted |
+
+The most important feature is the **Error resilience.** If for some reason OBS or the computer crashes, the video format will be playable and readable up to the point where the app crashed.
+
+<Aside type="danger">
+  Although slim, there's still chance for the video to corrupt if any service
+  stops. MKV it's just better for catastrophic events compared to mp4
+</Aside>
+
+<Aside type="tip" label="Sharing Formats">
+
+MKV format videos are **large**. In order to **reduce the size** you can
+convert them into an **mp4 file.** You can use OBS for this by going to:
+
+> **File > Remux Recordings > Button in the OBS Recording Section > Choose Recording > Remux.**
+
+</Aside>
+
+### Start Virtual Camera Button
+
+This button will allow you to share your current OBS scene by creating a **Virtual Camera** that you can choose in Zoom, Teams, etc.
+
+<div class="center">
+  ![screenshot of zoom and obs virtual camera
+  slected](./../../../assets/zoom-camera.png)
+</div>
+
+After clicking this button, the button's text will change to **Stop Virtual Camera.** Press this button to stop sharing your OBS feed.
+
+<div class="center">
+  ![screenshot of the Virtual Camera button
+  pressed](./../../../assets/virtual-press.png)
+</div>
+
+<Aside type="caution">
+  This will only share video and not audio. To share audio in Zoom or any other
+  meeting app please select the audio interface as the microphone input.
+</Aside>
