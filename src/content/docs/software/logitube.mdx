@@ -1,0 +1,44 @@
+---
+title: LogiTune
+description: Apps used with equipment
+sidebar:
+  order: 3
+---
+
+import {
+  Aside,
+  Tabs,
+  TabItem,
+  Card,
+  Steps,
+} from "@astrojs/starlight/components";
+
+This software allows you to change the exposure, sharpness, focus, or other setting from the Logitech Brio webcam.
+
+![Logitune logo image](https://cdn.shopify.com/s/files/1/0567/7599/9639/files/logitunes-1680576825130.webp?v=1697623472)
+
+## Image Adjustment
+
+This software is pretty straight forward.
+
+<Steps>
+  1. Connect your Logitech Brio webcam.
+
+2. Open LogiTune and select the webcam you want to adjust.
+
+3. Click on **_Click here to start the preview_** to
+   preview your changes.
+
+4. Close the app.
+
+   <Aside type="caution">
+     This is important so that you can see the webcam in OBS, otherwise it will
+     not show up.
+   </Aside>
+
+</Steps>
+
+<Aside>
+  If you don't see the changes applied in OBS, open LogiTune again and select
+  the webcam. This will refresh the adjustments made.
+</Aside>

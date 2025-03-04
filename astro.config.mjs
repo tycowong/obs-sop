@@ -10,6 +10,7 @@ export default defineConfig({
       customCss: ["./src/styles/custom.css"],
       social: {
         github: "https://github.com/tycowong",
+        linkedin: "https://www.linkedin.com/in/roberto-wong-3847571b2/",
       },
       sidebar: [
         {
@@ -22,6 +23,14 @@ export default defineConfig({
         {
           label: "Equipment",
           autogenerate: { directory: "equipment" },
+        },
+        {
+          label: "Software",
+          autogenerate: { directory: "software" },
+        },
+        {
+          label: "Setup",
+          autogenerate: { directory: "setup" },
         },
       ],
     }),

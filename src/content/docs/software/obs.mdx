@@ -2,7 +2,7 @@
 title: OBS (Open Broadcaster Software)
 description: Deep dive into OBS and the plugins used
 sidebar:
-  order: 5
+  order: 4
 ---
 
 import {
@@ -337,4 +337,43 @@ After clicking this button, the button's text will change to **Stop Virtual Came
 <Aside type="caution">
   This will only share video and not audio. To share audio in Zoom or any other
   meeting app please select the audio interface as the microphone input.
+</Aside>
+
+## OBS Plugins
+
+Plugins are a great way to enhance the functionality of OBS. You can find a bunch of them made by the community here:
+
+<LinkCard
+  title="OBS Plugins Site"
+  href="https://obsproject.com/forum/plugins/"
+/>
+
+### Multiple Source and Scene Recording
+
+By default OBS cannot record or stream separate sources and scenes at the same time. We can add this functionality by using a plugin called **Branch Output**
+
+<Card title="Branch Output PLugin">
+  <LinkCard
+    title="OBS site"
+    href="https://obsproject.com/forum/resources/branch-output-streaming-recording-filter-for-source-scene.1987/"
+    description="Streaming/Recording filter for source/scene 1.0.2"
+  />
+  <LinkCard
+    title="GitHub Repo"
+    href="https://github.com/OPENSPHERE-Inc/branch-output"
+    description="Branch Output Repository"
+  />
+</Card>
+
+This plugin allows you to can record each source individually. As a result, depending on the number of sources you wnat to record, this plugin will produced a video file per source.
+
+<Aside>
+
+As an example, if you have 2 camera sources you want to record, you will see 3
+files:
+
+- Scene Recording
+- Source 1 Recording
+- Source 2 Recording
+
 </Aside>
